@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --main-bg-color: rgb(89, 218, 54);
+    --general-centering: 0 14%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Karla', sans-serif;
+}
+
+
+/* STYLING  HEADER AND NAV-BAR */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    /* border: 1px solid black; */
+    padding: var(--general-centering)
+}
+
+.header-nav {
+    display: flex;
+    /* border: 1px solid red; */
+    width: 500px;
+    max-width: 80%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-collection {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    max-width: 80%;
+    /* border: 1px solid blue; */
+}
+
+.nav-collection a {
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+.nav-bar-download-button {
+    background-color: #333333;
+    padding: 10px;
+    width: 150px;
+    border-radius: 3px;
+    color: #ffffff;
+    /* border: 1px solid blue; */
+}
+
+.nav-bar-download-button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* STYLING MAIN */
+
+main {
+    margin: 100px auto 0;
+    /* border: 1px solid red; */
+}
+
+
+/* STYLING PRODUCT SECTION */
+
+.product-section {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: var(--general-centering);
+    background-image: linear-gradient(180deg, var(--main-bg-color), var(--main-bg-color), var(--main-bg-color), white, white);
+}
+
+.product-section-image-div {
+    width: 50%;
+}
+
+.product-section-image {
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.product-section-cta {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    flex-wrap: wrap;
+    height: auto;
+    max-width: 50%;
+    padding: 100px 50px 0 100px;
+}
+
+.product-section-cta h3 {
+    font-size: 70px;
+    padding: 10px 0;
+    color: #1f1f1f;
+}
+
+.product-section-cta p {
+    font-size: 21px;
+    color: #222f3f;
+    font-weight: 400;
+    width: 90%;
+    padding: 30px 0;
+    line-height: 30px;
+    font-family: 'Rubik', sans-serif;
+}
+
+[alt="Google Play Download Image"] {
+    padding-left: 10px;
+}
+
+
+/* STYLING SAMPLES SECTION */
+
+.samples-section {
+    /* border: 1px solid blue; */
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    padding: var(--general-centering);
+    z-index: 0;
+}
+
+.sample-containers {
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 300px; */
+    max-height: 700px;
+    padding-top: 300px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.sample-containers div {
+    width: 50%;
+    /* border: 1px solid purple; */
+    padding-left: 8%;
+}
+
+.sample-containers div h3 {
+    font-size: 55px;
+    margin-bottom: 35px;
+    color: #1f1f1f;
+}
+
+.sample-containers div p {
+    font-size: 21px;
+    color: #666666;
+    line-height: 30px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.sample-containers img {
+    width: 40%;
+    /* border: 1px solid purple; */
+}
+
+
+/* STYLING TESTIMONIALS SECTION */
+
+.testimonials-section {
+    /* text-align: center; */
+    position: relative;
+    z-index: 1;
+    padding: var(--general-centering);
+    background-image: linear-gradient(180deg, rgb(225, 242, 232), rgb(225, 242, 232), rgb(225, 242, 232), white);
+    /* background-color: rgb(225, 242, 232); */
+    padding-top: 100px;
+    height: auto;
+}
+
+.testimonials-section-heading {
+    /* border: 1px solid blue; */
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: #1f1f1f;
+}
+
+.testimonials-container {
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px;
+    padding: 20px 50px;
+    gap: 30px 30px;
+}
+
+.customers-testimonial-card {
+    padding: 25px 30px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 0px white;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.customers-testimonial-card p {
+    font-size: 18px;
+    line-height: 26px;
+    font-family: 'Rubik', sans-serif;
+    color: #1f1f1f;
+}
+
+.customer-card-infos {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: flex-end;
+    height: 55px;
+    /* padding-top: 20px; */
+}
+
+.customer-name-and-job {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid green; */
+    height: 100%;
+    font-family: 'Karla', sans-serif;
+}
+
+.customer-name-and-job h5 {
+    font-size: 16px;
+}
+
+.customer-name-and-job p {
+    font-size: 14px;
+    font-family: 'Karla', sans-serif;
+    color: #666666;
+}
+
+
+/* STYLING CTA SECTION */
+
+.cta-section {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    padding: var(--general-centering);
+    /* padding: var(--general-centering); */
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    border-bottom: 1px solid #ccc;
+}
+
+.cta-section h6 {
+    font-size: 16px;
+    color: #666666;
+}
+
+.cta-section h2 {
+    font-size: 55px;
+    width: 65%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    text-align: center;
+    color: #1f1f1f;
+}
+
+
+/* STYLING FOOTER */
+
+footer {
+    /* border: 1px solid blue; */
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--general-centering);
+    height: 80px;
+}
+
+.footer-nav {
+    display: flex;
+    width: 28%;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    margin-left: 100px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 100px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #666666;
+}
